@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"scr_bin_search","path":"scripts/scr_bin_search/scr_bin_search.yy",},"order":1,},
     {"id":{"name":"obj_node","path":"objects/obj_node/obj_node.yy",},"order":1,},
+    {"id":{"name":"scr_node_utils","path":"scripts/scr_node_utils/scr_node_utils.yy",},"order":2,},
     {"id":{"name":"scr_mode","path":"scripts/scr_mode/scr_mode.yy",},"order":0,},
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},"order":0,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},

@@ -1,10 +1,17 @@
 /// @description Right Pressed
-switch(mode){
+var near = instance_nearest(mouse_x, mouse_y, obj_node)
+
+if(check_near(near)){
+	switch(mode){
 	case Mode.ADD_REMOVE_NODE:
-	var inst = instance_nearest(mouse_x, mouse_y, obj_node)
-	if(point_distance(mouse_x,mouse_y,inst.x, inst.y)<10){
-		array_delete(nodes,bin_search(nodes, inst),1)
-		instance_destroy(inst)
-		return
+		while(array_length(near.connected) > 0)
+			edge_delete(near, near.connected[0])
+		array_delete(nodes,bin_search(nodes, near),1)
+		instance_destroy(near)
+		break
+	
+	case Mode.ADD_REMOVE_EDGE:
+		start_node = near
+		start_node.highlight = true
 	}
 }
