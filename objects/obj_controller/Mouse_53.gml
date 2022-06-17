@@ -8,6 +8,7 @@ switch(mode){
 	case Mode.ADD_REMOVE_EDGE:{
 	if(start_node == pointer_null)
 		start_node = instance_nearest(mouse_x, mouse_y, obj_node)
+		start_node.highlight = true
 		//TODO Finish
 	}
 }
