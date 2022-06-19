@@ -4,8 +4,11 @@ var near = instance_nearest(mouse_x, mouse_y, obj_node)
 if(check_near(near)){
 	switch(mode){
 	case Mode.NODE:
+		//Clear node connections.
 		while(array_length(near.connected) > 0)
 			edge_delete(near, near.connected[0])
+		
+		//Delete and destroy node.
 		array_delete(nodes,bin_search(nodes, near),1)
 		instance_destroy(near)
 		break
