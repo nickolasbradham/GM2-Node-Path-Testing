@@ -8,5 +8,5 @@ draw_text(0, fnt_h, node_array_string(path))
 
 //For each node print it, all connected nodes, and the path parent.
 for(var i = 0; i < array_length(nodes); i++)
-	draw_text(0, (i + 2) * fnt_h, string(nodes[i].num) + ": " + node_array_string(nodes[i].connected) + ": " + (nodes[i].path_par !=
-		pointer_null ? string(nodes[i].path_par.num) : ""))
+	draw_text(0, (i + 2) * fnt_h, string(nodes[i].num) + ": " + node_array_string(nodes[i].connected)
+		+ ": " + (nodes[i].path_par != noone ? string(nodes[i].path_par.num) : ""))

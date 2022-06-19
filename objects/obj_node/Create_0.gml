@@ -5,4 +5,4 @@ highlight = false
 connected = []
 
 //Used for pathing.
-path_par = pointer_null
+path_par = noone

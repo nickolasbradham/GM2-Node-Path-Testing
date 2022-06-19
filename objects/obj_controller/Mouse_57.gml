@@ -5,5 +5,7 @@ if(mode == Mode.EDGE){
 		edge_delete(start_node, near)
 }
 
-start_node.highlight = false
-start_node = pointer_null
+if(start_node != noone){
+	start_node.highlight = false
+	start_node = noone
+}
