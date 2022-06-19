@@ -7,8 +7,8 @@ for(var i = 0; i < array_length(connected); i++)
 
 //Draw highlight.
 if(highlight){
-	draw_set_color(c_aqua)
-	draw_circle(x,y,11,false)
+	draw_set_color(c_lime)
+	draw_circle(x,y,12,false)
 }
 
 //Draw node.

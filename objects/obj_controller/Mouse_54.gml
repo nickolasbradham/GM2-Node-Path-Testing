@@ -1,4 +1,10 @@
 /// @description Right Pressed
+
+if(mode == Mode.PATH){
+	path = []
+	return
+}
+
 var near = instance_nearest(mouse_x, mouse_y, obj_node)
 
 if(check_near(near)){
@@ -16,5 +22,6 @@ if(check_near(near)){
 	case Mode.EDGE:
 		start_node = near
 		start_node.highlight = true
+		break
 	}
 }

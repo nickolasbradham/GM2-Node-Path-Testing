@@ -37,7 +37,6 @@ if(check_near_dupe(near, start_node)){
 						//...and trace new path.
 						var crawl = near
 						while(crawl != start_node){
-							crawl.show_par = true
 							array_push(path, crawl)
 							crawl = crawl.path_par
 						}
