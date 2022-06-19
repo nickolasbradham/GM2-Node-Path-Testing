@@ -24,3 +24,15 @@ function check_near(node){
 function check_near_dupe(node_a, node_b){
 	return check_near(node_a) && node_a != node_b
 }
+
+function node_array_string(nodes){
+	var cons = "["
+	var len_1 = array_length(nodes) - 1
+	
+	for(var ic = 0; ic < len_1; ic++)
+		cons += string(nodes[ic].num) + ", "
+	
+	cons += (len_1 >= 0 ? string(nodes[len_1].num) : "") + "]"
+	
+	return cons
+}
